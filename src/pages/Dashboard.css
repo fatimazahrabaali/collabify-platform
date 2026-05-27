@@ -1,0 +1,201 @@
+html,
+body,
+#root {
+
+  width: 100%;
+
+  min-height: 100vh;
+
+  margin: 0;
+
+  padding: 0;
+
+  overflow-x: hidden;
+
+}
+
+.dashboard-page {
+
+  display: flex;
+
+  width: 100%;
+
+  min-height: 100vh;
+
+  background: #ffe5b8;
+
+}
+
+.dashboard-content {
+
+  flex: 1;
+
+  padding: 30px;
+
+  min-height: 100vh;
+
+  overflow-y: auto;
+
+}
+
+.dashboard-header {
+
+  margin-bottom: 30px;
+
+}
+
+.dashboard-title {
+
+  font-size: 40px;
+
+  font-weight: bold;
+
+}
+
+.dashboard-subtitle {
+
+  color: gray;
+
+  font-size: 17px;
+
+}
+
+.dashboard-card {
+
+  background: white;
+
+  border-radius: 22px;
+
+  padding: 25px;
+
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+
+}
+
+.purple-text {
+
+  color: #2ca50b;
+
+}
+
+.orange-text {
+
+  color: #ff9800;
+
+}
+
+.green-text {
+
+  color: #4caf50;
+
+}
+
+.blue-text {
+
+  color: #2196f3;
+
+}
+
+.red-text {
+
+  color: red;
+
+}
+
+.view-all {
+
+  color: #000000;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+}
+
+.project-item {
+
+  margin-bottom: 30px;
+
+}
+
+.progress {
+
+  height: 10px;
+
+  border-radius: 10px;
+
+}
+
+.member-item {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 25px;
+
+}
+
+.member-avatar {
+
+  width: 50px;
+
+  height: 50px;
+
+  border-radius: 50%;
+
+  background: #e4e6ff;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-weight: bold;
+
+  color: #6c47ff;
+
+}
+
+.status-dot {
+
+  width: 12px;
+
+  height: 12px;
+
+  border-radius: 50%;
+
+}
+
+.active {
+
+  background: green;
+
+}
+
+.inactive {
+
+  background: gray;
+
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .dashboard-page {
+
+    flex-direction: column;
+
+  }
+
+  .dashboard-content {
+
+    padding: 20px;
+
+  }
+
+}
