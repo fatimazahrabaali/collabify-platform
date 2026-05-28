@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* PAGE */
+
+.projects-page {
+  display: flex;
+  min-height: 100vh;
+  background: #ffe5b8;
+}
+
+/* CONTENT */
+
+.projects-content {
+  flex: 1;
+  padding: 40px;
+}
+
+/* TITLE */
+
+.projects-title {
+  font-size: 55px;
+  margin-bottom: 30px;
+  color: rgb(138, 21, 130);
+}
+
+/* FORM CARD */
+
+.project-form-card {
+  background: white;
+  padding: 35px;
+  border-radius: 25px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  margin-bottom: 50px;
+}
+
+.project-form-card h3 {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+/* INPUTS */
+
+.project-input {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 0 20px;
+  font-size: 17px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.project-input:focus {
+  border-color: #c86dd7;
+}
+
+/* ADD BUTTON */
+
+.add-btn {
+  background: linear-gradient(
+    90deg,
+    #ff9a5a,
+    #ff4f93,
+    #bd57e8
+  );
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 14px 30px;
+  border-radius: 12px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  transform: scale(1.03);
+}
+
+/* GRID */
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* PROJECT CARD */
+
+.project-card {
+  width: 420px;
+  background: #fff7f7;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.project-card h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #a14dbd;
+}
+
+.project-card p {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* DELETE BUTTON */
+
+.delete-btn {
+  background: #fbcdff;
+  border: none;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background: #ef82df;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 992px) {
+
+  .projects-page {
+    flex-direction: column;
+  }
+
+  .projects-content {
+    padding: 20px;
+  }
+
+  .projects-title {
+    font-size: 38px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+}

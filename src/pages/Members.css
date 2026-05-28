@@ -1,0 +1,146 @@
+.members-page {
+  min-height: 100vh;
+  background-color: #ffe5b8;
+}
+
+/* HEADER */
+
+.members-header h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(103, 9, 103);
+}
+
+.members-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* BUTTON */
+
+.invite-btn {
+  border: none;
+  background: linear-gradient(
+    90deg,
+    #ff9a5a,
+    #ff4f93,
+    #bd57e8
+  );
+
+  color: white;
+  padding: 14px 25px;
+  border-radius: 15px;
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.invite-btn:hover {
+  transform: scale(1.03);
+}
+
+/* SEARCH */
+
+.search-input {
+  width: 320px;
+  height: 50px;
+
+  border: none;
+  outline: none;
+
+  border-radius: 15px;
+
+  padding: 0 20px;
+
+  background: white;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* TABLE */
+
+.members-table {
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.table-header {
+  background: #fff3df;
+  padding: 20px;
+  font-weight: bold;
+  color: #444;
+}
+
+.member-row {
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.member-row:hover {
+  background: #fffaf3;
+}
+
+/* AVATAR */
+
+.member-avatar {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* STATUS */
+
+.member-status {
+  font-size: 14px;
+}
+
+/* ROLE BADGE */
+
+.role-badge {
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* ACTION BUTTONS */
+
+.action-btn {
+  border: none;
+  width: 40px;
+  height: 40px;
+
+  border-radius: 12px;
+
+  background: #f5f5f5;
+
+  transition: 0.3s;
+}
+
+.action-btn:hover {
+  transform: scale(1.05);
+}
+
+.delete-btn {
+  color: red;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
+  .search-input {
+    width: 100%;
+  }
+
+}

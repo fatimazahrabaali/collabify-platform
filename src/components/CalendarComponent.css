@@ -1,0 +1,211 @@
+.fc {
+
+  background: #a9a2db;
+
+  padding: 20px;
+
+  border-radius: 35px;
+
+  color: white;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+}
+
+/* HEADER */
+
+.fc-toolbar-title {
+
+  font-size: 20px !important;
+
+  font-weight: bold;
+
+  color: white;
+
+}
+
+/* BUTTONS */
+
+.fc-button {
+
+  background: rgba(255,255,255,0.15) !important;
+
+  border: none !important;
+
+  border-radius: 15px !important;
+
+  padding: 5px 10px !important;
+
+  transition: 0.3s;
+
+}
+
+.fc-button:hover {
+
+  background: rgba(255,255,255,0.3) !important;
+
+}
+
+.fc-button-active {
+
+  background: #ff4f93 !important;
+
+}
+
+/* DAYS HEADER */
+
+.fc-col-header-cell {
+
+  background: transparent;
+
+  border: none !important;
+
+  padding: 15px 0;
+
+}
+
+.fc-col-header-cell-cushion {
+
+  color: white !important;
+
+  font-size: 10px;
+
+  text-decoration: none !important;
+
+}
+
+/* DAY CELLS */
+
+.fc-daygrid-day {
+
+  border: none !important;
+
+}
+
+.fc-daygrid-day-frame {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  min-height: 55px;
+
+}
+
+/* DAY NUMBERS */
+
+.fc-daygrid-day-number {
+
+  color: white !important;
+
+  text-decoration: none !important;
+
+  font-size: 17px;
+
+  width: 45px;
+
+  height: 45px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border-radius: 50%;
+
+  transition: 0.3s;
+
+}
+
+/* HOVER */
+
+.fc-daygrid-day-number:hover {
+
+  background: rgba(255,255,255,0.2);
+
+}
+
+/* TODAY */
+
+.fc-day-today {
+
+  background: transparent !important;
+
+}
+
+.fc-day-today .fc-daygrid-day-number {
+
+  background: #dfff55;
+
+  color: black !important;
+
+  font-weight: bold;
+
+}
+
+/* EVENTS */
+
+.fc-event {
+
+  background: linear-gradient(
+    90deg,
+    #ff9a5a,
+    #ff4f93,
+    #bd57e8
+  ) !important;
+
+  border: none !important;
+
+  border-radius: 10px !important;
+
+  padding: 4px;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+}
+
+/* GRID LINES */
+
+.fc-scrollgrid {
+
+  border: none !important;
+
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+
+  border: none !important;
+
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
+  .fc-toolbar {
+
+    flex-direction: column;
+
+    gap: 15px;
+
+  }
+
+  .fc-toolbar-title {
+
+    font-size: 24px !important;
+
+  }
+  .fc {
+
+    max-width: 700px;
+
+    margin: auto;
+  }
+
+}

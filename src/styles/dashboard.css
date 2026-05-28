@@ -1,0 +1,74 @@
+body {
+  background-color: #f5f6fa;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Sidebar */
+
+.sidebar {
+  width: 250px;
+  background: white;
+  border-right: 1px solid #ddd;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Cards */
+
+.project-card {
+  border-radius: 18px;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+
+.custom-btn {
+  background: linear-gradient(to right, #4b3cff, #7a2cff);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+.custom-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+/* Inputs */
+
+.form-control {
+  border-radius: 10px !important;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .dashboard-content {
+    padding: 20px !important;
+  }
+
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6fa;
+}
