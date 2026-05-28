@@ -1,3 +1,4 @@
+```yaml id="1ex4y7"
 name: Collabify CI
 
 on:
@@ -10,24 +11,57 @@ on:
       - main
 
 jobs:
-  build:
+
+  frontend:
 
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: frontend_Gl
 
     steps:
 
       - name: Checkout project
         uses: actions/checkout@v4
 
-      - name: Install Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 18
 
       - name: Install frontend dependencies
         run: npm install
-        
 
       - name: Build frontend
         run: npm run build
-        
+
+
+  backend:
+
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: backend_Gl
+
+    steps:
+
+      - name: Checkout project
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Give permission to mvnw
+        run: chmod +x mvnw
+
+      - name: Run backend tests
+        run: ./mvnw test
+
+      - name: Build backend
+        run: ./mvnw clean install
+```
