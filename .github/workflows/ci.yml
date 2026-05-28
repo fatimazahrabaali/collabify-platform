@@ -1,4 +1,3 @@
-```yaml id="1ex4y7"
 name: Collabify CI
 
 on:
@@ -13,7 +12,6 @@ on:
 jobs:
 
   frontend:
-
     runs-on: ubuntu-latest
 
     defaults:
@@ -21,7 +19,6 @@ jobs:
         working-directory: frontend_Gl
 
     steps:
-
       - name: Checkout project
         uses: actions/checkout@v4
 
@@ -30,7 +27,7 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install frontend dependencies
+      - name: Install dependencies
         run: npm install
 
       - name: Build frontend
@@ -38,7 +35,6 @@ jobs:
 
 
   backend:
-
     runs-on: ubuntu-latest
 
     defaults:
@@ -46,7 +42,6 @@ jobs:
         working-directory: backend_Gl
 
     steps:
-
       - name: Checkout project
         uses: actions/checkout@v4
 
@@ -64,4 +59,3 @@ jobs:
 
       - name: Build backend
         run: ./mvnw clean install
-```
