@@ -26,4 +26,4 @@ Les interfaces de l'application ont été conçues avec Figma :
 
 Lien Figma :
 
-[https://www.figma.com/design/TON-LIEN-ICI](https://www.figma.com/proto/KuF6uLxeDfUXPa4xJDaTof/Platforme-Collaborative?node-id=59-57&t=8SM9JL0yQPgn5vP6-1)
+https://www.figma.com/design/KuF6uLxeDfUXPa4xJDaTof/Platforme-Collaborative?node-id=59-57&t=0HoXN96hhUH26LMS-1
